@@ -1,0 +1,15 @@
+venv/
+
+mode_helper.egg-info/
+
+mode_helper/__pycache__/
+mode_helper/.#*
+
+
+tests/__pycache__/
+tests/.#*
+
+
+.vscode/
+
+.mode_helper.cfg
