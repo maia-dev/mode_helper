@@ -1,6 +1,6 @@
-===============
- mode_helper
-===============
+================================
+ mode_helper - UNDER DEVELOPMENT
+================================
 A visual helper for i3wm modes, inspired by spacemacs.
 
 This package was designed to be used as an interface for `pass <https://www.passwordstore.org>`_ but can be used to create menus for any mode.
