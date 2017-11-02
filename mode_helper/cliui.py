@@ -1,6 +1,6 @@
 
-def override_file():
-    if input("File already exists, Override? (y/N)") in ['y','Y']:
+def ask_overwrite_file():
+    if input("File already exists, Overwrite? (y/N)") in ['y','Y']:
         return True
     else:
         return False

@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name='mode_helper',
-    version='0.0.1',
+    version='0.1',
     author='Pedro Coelho',
     author_email='maia.coelho.dev@gmail.com',
     url='https://github.com/maia-dev/mode_helper',
@@ -17,7 +17,8 @@ setup(
     include_package_data=True,
     install_requires=[
         'argparse',
-        'configparser'
+        'configparser',
+        'gi',
     ],
     entry_points={
         'console_scripts': ['mode_helper=mode_helper.run:main'],

@@ -20,13 +20,21 @@ def get_config(alt_config,pass_dir):
         config.set('pass','directory',pass_dir)
     return config
 
+
 def gen_default_conf():
     config = configparser.RawConfigParser()
     config.add_section('pass')
     config.set('pass','directory',os.path.expanduser('~/.password-store/'))
+    config.add_section('gui')
+    config.set('gui','i3_bar_height','19')
+    config.set('gui','line_height','30')
+    config.set('gui','background','')
+    config.set('gui','transparency','')
+    config.set('gui','shortcut_color','')
+    config.set('gui','description_color','')
 
     if os.path.isfile('.mode_helper.cfg'):
-            if not cliui.override_file():
+            if not cliui.ask_overwrite_file():
                 raise IOError(
                     'Error: Config file already exists in this directory!')
 

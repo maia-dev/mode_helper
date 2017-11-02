@@ -7,6 +7,10 @@ This package was designed to be used as an interface for `pass <https://www.pass
 
 for more info see `documentation <docs/index.rst>`_.
 
+Dependencies
+============
+gtk-3.0
+
 TODO
 ====
 Integrate multiple monitors
